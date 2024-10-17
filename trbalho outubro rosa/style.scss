@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "noto sans", sans-serif;
+}
+
+header {
+  background-color: #ff69b4;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: normal;
+}
+.navbar {
+  width: 60%;
+}
+ul {
+  display: flex;
+  padding-top: 3.1%;
+  justify-content: space-around;
+
+  a {
+    color: white;
+  }
+}
+
+.info1 {
+  display: flex;
+  background-color: #ffd9ec;
+  font-size: 195%;
+  align-items: center;
+}
+
+.info2 {
+  display: flex;
+  background-color: #ff69b4;
+  font-size: 195%;
+  align-items: center;
+}
+.info3 {
+  background-color: #ffd9ec;
+  padding-left: 23%;
+}
+footer {
+  display: flex;
+  background-color: #ff69b4;
+  height: 15vh;
+  justify-content: space-evenly;
+}
+.social {
+  align-items: center;
+  display: flex;
+}
+
+.meio {
+  align-self: center;
+}
+
+//Professorar como não assitir aula sobre o chatgpt, essa parter aqui fiz a maior parter com ajuda do chatgpt
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info1,
+  .info2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info1 img,
+  .info2 img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .info3 img {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer .meio {
+    margin: 20px 0;
+  }
+
+  .footer .social img {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul li {
+    margin-bottom: 10px;
+  }
+
+  .info1,
+  .info2,
+  .info3 {
+    padding: 10px;
+  }
+
+  .info3 img {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .footer .social img {
+    width: 50px;
+  }
+}
